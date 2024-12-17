@@ -1,0 +1,28 @@
+@media(max-width:890px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .conteudo-principal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-principal {
+        width: 720px;
+    }
+
+    .ad {
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width:815px) {
+    .video-principal {
+        flex: 1 0 355px;
+    }
+}

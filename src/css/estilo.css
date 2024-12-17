@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid:
+    "conteudo-principal ad" 56px
+    "conteudo-principal demais-conteudos"
+    "descricao demais-conteudos"
+    / auto 274px;
+    gap: 15px 20px;
+    padding: 38px 35px 0;
+}
+
+.conteudo-principal {
+    grid-area: conteudo-principal;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.video-principal {
+    width: 100%;
+    border-radius: 12px;
+        overflow: hidden;
+}
+
+.descricao {
+    grid-area: descricao;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao h1 {
+    font-size: 18px;
+}
+
+.descricao span {
+    font-size: 14px;
+}
+
+.descricao-geral {
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px 0 0 10px;
+}
+
+.ad {
+    grid-area: ad;
+}
+
+.demais-conteudos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-area: 'demais-conteudos';
+}
+
+.conteudo-lateral {
+    display: grid;
+    grid-template: 16px repeat(auto, 13px)/ 101px auto;
+    gap: 5px;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.video-lateral {
+    grid-area: 1 / 1 / 5 / 1;
+    width: 101px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.conteudo-lateral h3 {
+    font-weight: 700;
+    font-size: 14px;
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+.conteudo-lateral span {
+    font-size: 11px;
+}
